@@ -7,11 +7,35 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Noaa.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+
+        NSString *icao = nil;
+        char icaoChar[4];
+        
+        printf("ICAO: ");
+        scanf("%s", icaoChar);
+        
+        icao = [NSString stringWithCString:icaoChar encoding:NSUTF8StringEncoding];
+        
+        if (icao) {
+            Noaa *noaa = [[Noaa alloc] init];
+            noaa.icao = icao;
+            
+            NSString *metarString = [noaa getMetar];
+            NSString *tafString = [noaa getTAF];
+            
+            if (metarString) {
+               NSLog(@"METAR: %@", metarString);
+            }
+            
+            if (tafString) {
+                NSLog(@"TAF: %@", tafString);
+            }
+        }
+        
     }
     return 0;
 }

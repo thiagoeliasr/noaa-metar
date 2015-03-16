@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9A1800161AB7025900D47BF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A1800151AB7025900D47BF3 /* main.m */; };
+		9A18001E1AB7046900D47BF3 /* Noaa.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A18001D1AB7046900D47BF3 /* Noaa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		9A1800121AB7025900D47BF3 /* noaa-metar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "noaa-metar"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1800151AB7025900D47BF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A18001C1AB7045800D47BF3 /* Noaa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Noaa.h; sourceTree = "<group>"; };
+		9A18001D1AB7046900D47BF3 /* Noaa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Noaa.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				9A1800151AB7025900D47BF3 /* main.m */,
+				9A18001C1AB7045800D47BF3 /* Noaa.h */,
+				9A18001D1AB7046900D47BF3 /* Noaa.m */,
 			);
 			path = "noaa-metar";
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A18001E1AB7046900D47BF3 /* Noaa.m in Sources */,
 				9A1800161AB7025900D47BF3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
