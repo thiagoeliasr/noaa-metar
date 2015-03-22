@@ -1,2 +1,2 @@
 # noaa-metar
-Interface/Implementation for getting noaa metar file contents
+Objective-C Interface/Implementation for getting noaa metar file contents
